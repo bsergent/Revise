@@ -23,7 +23,7 @@ public class Revise extends javax.swing.JFrame {
             mcFont = Font.createFont(Font.TRUETYPE_FONT, getClass().getResourceAsStream("/com/challengercity/revise/resources/minecraft_font.ttf"));
         } catch (Exception ex) {
             ex.printStackTrace();
-            setTitle("Revise - Font did not load");
+            setTitle("Revise - Font did not load"); // TODO Might need to update for the int[] NBT tag
         }
         initComponents();
         sizingOutput.setUI(new VerticalLabelUI(true)); // TODO On saving as a book and quill with a title, rename the book to that name

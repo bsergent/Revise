@@ -25,6 +25,7 @@ public class FormatConverter {
     }
     
     public static String convertMcToHtml(String mc) {
+        mc = mc.replaceAll("\n","<br/>");
         String html = "<html>\n  <head>\n    \n  </head>\n  <body>\n    <p style=\"margin-top: 0\">\n      "+mc+"\n    </p>\n  </body>\n</html>";
         html = html.replaceAll("§l", "<b>");
         html = html.replaceAll("§n", "<u>");
